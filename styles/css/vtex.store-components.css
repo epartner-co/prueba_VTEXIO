@@ -1,0 +1,13 @@
+.infoCardContainer--info-card-example {
+  height: 55vh;
+  margin-bottom: 40px;
+}
+
+.infoCardHeadline--info-card-example {
+  color: white;
+}
+
+.infoCardCallActionContainer--info-card-example :global(.vtex-button) {
+  background-color: black;
+  border-color: black;
+}

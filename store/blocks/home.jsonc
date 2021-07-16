@@ -1,6 +1,6 @@
 {
   "store.home": {
-    "blocks": ["rich-text#uno", "rich-text#dos", "slider-layout#text-test"]
+    "blocks": ["rich-text#uno", "info-card", "slider-layout#text-test1", "slider-layout#text-test2", "shelf#demo1"]
   },
   "rich-text#uno": {
     "props": {
@@ -11,7 +11,7 @@
       "blockClass": "text-uno"
     }
   },
-  "rich-text#dos": {
+  /* "rich-text#dos": {
     "props": {
       "text": "VTEX Store Framework dos",
       "textAlignment": "CENTER",
@@ -19,8 +19,8 @@
       "font": "t-heading-1",
       "blockClass": "text-dos"
     }
-  },
-  "slider-layout#text-test": {
+  }, */
+  "slider-layout#text-test1": {
     "props": {
       "itemsPerPage": {
         "desktop": 1,
@@ -34,39 +34,70 @@
     },
     "children": ["image#example-1", "image#example-2", "image#example-3"]
   },
+  "slider-layout#text-test2": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 2,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "never",
+      "blockClass": "carousel"
+    },
+    "children": ["image#example-1", "image#example-2", "image#example-3"]
+  },
   "image#example-1": {
     "props": {
-      "src": "https://cdn2.hubspot.net/hubfs/156214/blog/Que%20es%20un%20banner-1.jpg"
+      "src": "https://dieselcolombia.vteximg.com.br/arquivos/DIESEL-Pride-mb.jpg?v=637605702706000000"
       // "maxHeight": 24
     }
   },
   "image#example-2": {
     "props": {
-      "src": "https://alexcastrovalin.com/wp-content/uploads/2019/10/que-es-un-banner-publicitario.png"
+      "src": "https://dieselcolombia.vteximg.com.br/arquivos/new-logo-mb.jpg?v=637613781740700000"
       // "maxHeight": 24
     }
   },
   "image#example-3": {
     "props": {
-      "src": "https://www.antevenio.com/wp-content/uploads/2016/04/20-ejemplos-de-banners-creativos.jpg"
+      "src": "https://dieselcolombia.vteximg.com.br/arquivos/diesel-cascada-mb.jpg?v=637620632302900000"
       // "maxHeight": 24
     }
+  },
+  // Banner principal
+  "info-card": {
+    "props": {
+      "id": "info-card-example",
+      "isFullModeStyle": true,
+      "textPosition": "left",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "headline": "Clearance Sale",
+      "callToActionText": "DISCOVER",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-example",
+      "textAlignment": "center"
+    }
+  },
+  // Carrusel de productos
+  "shelf#demo1": {
+    "props": {
+      "productList": {
+        "titleText": "Nuestras Marcas",
+        "itemsPerPage": 4,
+        "maxItems": 10,
+        "minItemsPerPage": 2,
+        "scroll": "BY_PAGE",
+        "arrows": "true",
+        "blockClass": "textosSec",
+        "showPaginationDots": "never"
+      },
+      "autoplay": {
+        "timeout": 3000,
+        "stopOnHover": true
+      }
+    },
+    "blocks": ["product-summary.shelf"]
   }
-
-  /* "rich-text#1": {
-    "props": {
-      "text": "Test1"
-    }
-  },
-  "rich-text#2": {
-    "props": {
-      "text": "Test2",
-      "blockClass": "text-slide"
-    }
-  },
-  "rich-text#3": {
-    "props": {
-      "text": "Test3"
-    }
-  } */
 }

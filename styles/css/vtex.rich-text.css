@@ -1,0 +1,10 @@
+.paragraph {
+  color: red;
+}
+.paragraph--text-dos {
+  background-color: blue;
+}
+
+.paragraph--text-slide {
+  font-weight: bold;
+}
